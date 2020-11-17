@@ -13,7 +13,7 @@
 			let userInfo = uni.getStorageSync('userInfo') || '';
 			if(userInfo.id){
 				//更新登陆状态
-				uni.getStorage({
+				uni.getStorage({ 
 					key: 'userInfo',
 					success: (res) => {
 						this.login(res.data);
